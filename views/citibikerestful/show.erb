@@ -1,0 +1,10 @@
+@@show
+%h3= @station.name
+%p Colour: #{@station.colour}
+%p Age: #{@station.age}
+%p Description: #{@station.description}
+%p Created at: #{@station.created_at}
+%p Last updated at: #{@station.updated_at}
+%a(href="/stations/edit/#{@station.id}")EDIT
+%a(href="/stations/delete/#{@station.id}")DELETE
+%a(href='/stations') Back to index

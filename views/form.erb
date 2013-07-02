@@ -1,0 +1,18 @@
+<h1>Map my route!</h1>
+  <form action = "/select" method="post">
+    <select> <option>
+<%@data.each do |name|%>
+<%=params[:name]%>
+</option>
+     <option>hi</option>
+      <label>
+        Start:
+      </label>
+    <input type= "text" name="start"/>
+  <form action = "/select" method="post">
+    <option></option>
+      <label>Start:
+      </label>
+    <input type= "text" name="start"/>
+    <input type="submit" value="Submit"/>
+  </form>
